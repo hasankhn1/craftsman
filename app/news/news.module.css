@@ -1,0 +1,208 @@
+.hero {
+  background: var(--navy);
+  color: var(--off-white);
+  padding: clamp(140px, 16vw, 210px) var(--gutter) clamp(72px, 9vw, 130px);
+}
+.heroTitle {
+  font-size: clamp(46px, 8.8vw, 148px);
+  line-height: 0.85;
+  letter-spacing: -0.055em;
+}
+.feature {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr));
+  gap: clamp(28px, 4vw, 64px);
+  align-items: center;
+  margin-top: clamp(56px, 7vw, 96px);
+  color: var(--off-white);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.feature:hover {
+  color: var(--blue-bright);
+}
+.featureFrame {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: var(--navy-panel);
+  overflow: hidden;
+}
+.featureMeta {
+  font-size: 14.5px;
+  color: var(--dim);
+}
+.featureMeta strong {
+  color: var(--blue-bright);
+  font-weight: 500;
+}
+.featureTitle {
+  margin: 14px 0 0;
+  font-weight: 600;
+  font-size: clamp(28px, 3.17vw, 49px);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+.featureExcerpt {
+  margin: 20px 0 0;
+  font-size: 17.5px;
+  line-height: 1.6;
+  color: var(--dim-light);
+  max-width: 34em;
+}
+.featureCta {
+  display: inline-block;
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 15px;
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 4px;
+}
+
+/* ------------------------------------------------------------- Latest */
+
+.latest {
+  background: var(--paper);
+  padding: clamp(80px, 10vw, 150px) var(--gutter) clamp(100px, 12vw, 190px);
+  color: var(--ink);
+}
+.latestHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+}
+.latestTitle {
+  font-size: clamp(35px, 4.4vw, 70px);
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: min(100%, 360px);
+}
+.searchLabel {
+  font-size: 14px;
+  font-weight: 500;
+}
+.searchInput {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 14px 18px;
+  border: 2px solid var(--dim);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.searchInput:focus {
+  border-color: var(--blue);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
+}
+.filterCount {
+  opacity: 0.75;
+  font-weight: 500;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 40px;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: clamp(20px, 3vw, 48px);
+  align-items: center;
+  background: #fff;
+  padding: clamp(16px, 1.8vw, 24px);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background 0.2s;
+  border: 1px solid var(--line);
+}
+.row:hover {
+  background: #eef1f7;
+  color: var(--ink);
+}
+.rowFrame {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: var(--line);
+  overflow: hidden;
+  max-width: 420px;
+}
+.rowBody {
+  min-width: 0;
+  grid-column: span 2;
+}
+.rowMeta {
+  font-size: 14px;
+  color: var(--ink-muted);
+}
+.rowMeta strong {
+  color: var(--blue);
+  font-weight: 500;
+}
+.rowTitle {
+  margin: 10px 0 0;
+  font-weight: 600;
+  font-size: clamp(21px, 2.11vw, 32px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+.rowExcerpt {
+  margin: 12px 0 0;
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  max-width: 42em;
+}
+.rowCta {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 500;
+  font-size: 14.5px;
+  color: var(--blue);
+}
+
+.empty {
+  margin-top: 40px;
+  background: var(--navy);
+  color: var(--off-white);
+  padding: clamp(40px, 5vw, 72px);
+}
+.emptyTitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: clamp(23px, 2.46vw, 35px);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+.emptyText {
+  margin: 14px 0 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--dim-light);
+  max-width: 34em;
+}
+.emptyActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.emptyActions > * {
+  font-size: 13.5px;
+  padding: 16px 26px;
+  min-height: 48px;
+}

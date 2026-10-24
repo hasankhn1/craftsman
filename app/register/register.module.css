@@ -1,0 +1,234 @@
+.hero {
+  background: var(--navy);
+  color: var(--off-white);
+  padding: clamp(140px, 16vw, 210px) var(--gutter) clamp(72px, 9vw, 120px);
+}
+.heroGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr));
+  gap: 40px 64px;
+  align-items: end;
+}
+.heroTitle {
+  font-size: clamp(46px, 7.92vw, 132px);
+  line-height: 0.86;
+  letter-spacing: -0.055em;
+}
+.heroBody {
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.6;
+  color: var(--dim-light);
+  max-width: 30em;
+}
+.status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 4px;
+  margin-top: clamp(56px, 7vw, 96px);
+}
+.statusCard {
+  background: var(--navy-panel);
+  padding: 28px;
+}
+.statusState {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--blue-bright);
+}
+.statusStateMuted {
+  composes: statusState;
+  color: var(--dim);
+}
+.statusTitle {
+  margin: 10px 0 0;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+.statusText {
+  margin: 8px 0 0;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--dim-light);
+}
+
+/* -------------------------------------------------------------- Form */
+
+.formSection {
+  background: var(--paper);
+  padding: clamp(80px, 10vw, 150px) var(--gutter) clamp(100px, 12vw, 180px);
+  color: var(--ink);
+  scroll-margin-top: 90px;
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 48px clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+.pathTitle {
+  font-size: clamp(32px, 3.87vw, 60px);
+}
+.pathText {
+  margin: 24px 0 0;
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 28em;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
+}
+.tab {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 22px;
+  min-height: 48px;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  background: var(--paper);
+  color: var(--ink);
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.tab:hover {
+  filter: brightness(0.96);
+}
+.tabOn {
+  background: var(--navy);
+  color: var(--off-white);
+}
+.privacyNote {
+  margin: 32px 0 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  max-width: 28em;
+}
+
+.formCol {
+  grid-column: span 2;
+  min-width: 0;
+}
+.form {
+  background: #fff;
+  padding: clamp(24px, 3.4vw, 52px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 22px 24px;
+}
+.reqNote {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 14px;
+  color: var(--ink-muted);
+}
+.alert {
+  grid-column: 1 / -1;
+  background: #fbe9ea;
+  color: #8a1c24;
+  padding: 16px 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.full {
+  grid-column: 1 / -1;
+}
+.ageSet {
+  grid-column: 1 / -1;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ageLegend {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.ageOption {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  min-height: 44px;
+}
+.consent {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: 15.5px;
+  line-height: 1.55;
+  cursor: pointer;
+}
+.consentErr {
+  grid-column: 1 / -1;
+  margin-top: -12px;
+}
+.submitRow {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 24px;
+}
+.submit {
+  font-size: 14px;
+  padding: 18px 32px;
+  min-height: 52px;
+}
+
+/* ------------------------------------------------------------ Success */
+
+.done {
+  background: var(--navy);
+  color: var(--off-white);
+  padding: clamp(32px, 4.4vw, 64px);
+  outline: none;
+}
+.doneTitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: clamp(32px, 4.05vw, 60px);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+}
+.doneText {
+  margin: 24px 0 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--dim-light);
+  max-width: 32em;
+}
+.previewNote {
+  margin: 24px 0 0;
+  background: var(--navy-panel);
+  padding: 16px 20px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--off-white);
+  max-width: 40em;
+}
+.previewNote strong {
+  font-weight: 500;
+}
+.doneActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+.doneActions > * {
+  font-size: 13.5px;
+  padding: 16px 26px;
+}

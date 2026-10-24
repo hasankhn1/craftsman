@@ -1,0 +1,65 @@
+.hero {
+  background: var(--navy);
+  color: var(--off-white);
+  padding: clamp(140px, 16vw, 200px) var(--gutter) clamp(64px, 8vw, 110px);
+}
+.heroTitle {
+  font-size: clamp(39px, 6.16vw, 99px);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+}
+.heroBody {
+  margin: 28px 0 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--dim-light);
+  max-width: 34em;
+}
+.jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 36px;
+}
+.jumpLink {
+  background: var(--navy-panel);
+  color: var(--off-white);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14.5px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.jumpLink:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+.body {
+  padding: clamp(72px, 9vw, 130px) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(72px, 9vw, 120px);
+  max-width: 860px;
+}
+.section {
+  scroll-margin-top: 90px;
+}
+.sectionTitle {
+  margin: 0 0 24px;
+  font-weight: 600;
+  font-size: clamp(28px, 3.17vw, 46px);
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+.para {
+  margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.para:last-child {
+  margin-bottom: 0;
+}
