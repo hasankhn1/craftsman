@@ -1,7 +1,11 @@
 .footer {
+  /* Always dark, like the nav — see Nav.module.css. */
+  --link: var(--off-white);
+  --link-hover: var(--blue-bright);
+  --focus: var(--blue-bright);
   background: var(--navy);
   color: var(--off-white);
-  padding: clamp(72px, 9vw, 140px) var(--gutter) 28px;
+  padding: clamp(72px, 9vw, 140px) var(--gutter-x) 28px;
   overflow: hidden;
 }
 

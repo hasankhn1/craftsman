@@ -1,7 +1,7 @@
 .header {
   background: var(--navy);
   color: var(--off-white);
-  padding: clamp(130px, 14vw, 190px) var(--gutter) clamp(56px, 7vw, 96px);
+  padding: clamp(130px, 14vw, 190px) var(--gutter-x) clamp(56px, 7vw, 96px);
 }
 .breadcrumb {
   font-size: 14px;
@@ -44,7 +44,7 @@
 
 .heroBand {
   background: linear-gradient(180deg, var(--navy) 0 50%, #fff 50% 100%);
-  padding: 0 var(--gutter);
+  padding: 0 var(--gutter-x);
 }
 .heroFigure {
   margin: 0;
@@ -58,7 +58,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 40px clamp(32px, 5vw, 80px);
-  padding: clamp(56px, 7vw, 104px) var(--gutter) clamp(80px, 10vw, 140px);
+  padding: clamp(56px, 7vw, 104px) var(--gutter-x) clamp(80px, 10vw, 140px);
   align-items: start;
 }
 
@@ -173,7 +173,7 @@
 
 .related {
   background: var(--paper);
-  padding: clamp(80px, 10vw, 140px) var(--gutter);
+  padding: clamp(80px, 10vw, 140px) var(--gutter-x);
   color: var(--ink);
 }
 .relatedHead {
@@ -230,7 +230,7 @@
   background: var(--navy);
   color: var(--off-white);
   min-height: 80svh;
-  padding: clamp(150px, 16vw, 220px) var(--gutter) 120px;
+  padding: clamp(150px, 16vw, 220px) var(--gutter-x) 120px;
   box-sizing: border-box;
 }
 .missingTitle {

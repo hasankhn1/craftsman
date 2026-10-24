@@ -1,7 +1,7 @@
 .hero {
   background: var(--navy);
   color: var(--off-white);
-  padding: clamp(140px, 16vw, 210px) var(--gutter) clamp(72px, 9vw, 120px);
+  padding: clamp(140px, 16vw, 210px) var(--gutter-x) clamp(72px, 9vw, 120px);
 }
 .heroGrid {
   display: grid;
@@ -56,7 +56,7 @@
 
 .formSection {
   background: var(--paper);
-  padding: clamp(80px, 10vw, 150px) var(--gutter) clamp(100px, 12vw, 180px);
+  padding: clamp(80px, 10vw, 150px) var(--gutter-x) clamp(100px, 12vw, 180px);
   color: var(--ink);
   scroll-margin-top: 90px;
 }

@@ -273,7 +273,7 @@
 
 .road {
   background: var(--paper);
-  padding: clamp(88px, 11vw, 170px) var(--gutter);
+  padding: clamp(88px, 11vw, 170px) var(--gutter-x);
   color: var(--ink);
 }
 
@@ -393,7 +393,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(96px, 12vw, 170px) var(--gutter-wide);
+  padding: clamp(96px, 12vw, 170px) var(--gutter-wide-x);
   box-sizing: border-box;
   background-color: #05080f;
   background-image:
@@ -468,7 +468,7 @@
 .firsts {
   background: #fff;
   color: var(--ink);
-  padding: clamp(96px, 12vw, 190px) var(--gutter);
+  padding: clamp(96px, 12vw, 190px) var(--gutter-x);
 }
 .firstsGrid {
   display: grid;
@@ -534,7 +534,7 @@
 /* ------------------------------------------------- Vision & Mission */
 
 .statement {
-  padding: clamp(96px, 12vw, 180px) var(--gutter-wide);
+  padding: clamp(96px, 12vw, 180px) var(--gutter-wide-x);
   color: var(--ink);
 }
 .statementPaper {
@@ -636,7 +636,7 @@
 
 .founders {
   background: #fff;
-  padding: clamp(96px, 12vw, 190px) var(--gutter);
+  padding: clamp(96px, 12vw, 190px) var(--gutter-x);
   color: var(--ink);
 }
 .foundersHead {
@@ -659,7 +659,7 @@
 }
 .carouselViewport {
   overflow: hidden;
-  margin: 0 calc(-1 * var(--gutter));
+  margin: 0 calc(-1 * var(--gutter-x));
   padding: 20px 0 8px;
   touch-action: pan-y;
   user-select: none;
@@ -742,7 +742,7 @@
 .chant {
   position: relative;
   background: var(--navy-panel);
-  padding: clamp(96px, 12vw, 190px) var(--gutter);
+  padding: clamp(96px, 12vw, 190px) var(--gutter-x);
   overflow: hidden;
 }
 .chantCrest {
@@ -829,7 +829,7 @@
 .news {
   background: var(--paper);
   color: var(--ink);
-  padding: clamp(96px, 12vw, 190px) var(--gutter);
+  padding: clamp(96px, 12vw, 190px) var(--gutter-x);
 }
 .newsHead {
   display: flex;
@@ -956,7 +956,7 @@
   overflow: hidden;
   display: flex;
   align-items: flex-end;
-  padding: clamp(96px, 12vw, 170px) var(--gutter);
+  padding: clamp(96px, 12vw, 170px) var(--gutter-x);
   box-sizing: border-box;
 }
 .joinScrim {

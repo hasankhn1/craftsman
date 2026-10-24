@@ -1,7 +1,7 @@
 .hero {
   background: var(--navy);
   color: var(--off-white);
-  padding: clamp(140px, 16vw, 200px) var(--gutter) clamp(64px, 8vw, 110px);
+  padding: clamp(140px, 16vw, 200px) var(--gutter-x) clamp(64px, 8vw, 110px);
 }
 .heroTitle {
   font-size: clamp(39px, 6.16vw, 99px);
@@ -39,7 +39,7 @@
 }
 
 .body {
-  padding: clamp(72px, 9vw, 130px) var(--gutter);
+  padding: clamp(72px, 9vw, 130px) var(--gutter-x);
   display: flex;
   flex-direction: column;
   gap: clamp(72px, 9vw, 120px);

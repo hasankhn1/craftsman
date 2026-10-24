@@ -1,7 +1,7 @@
 .hero {
   background: var(--navy);
   color: var(--off-white);
-  padding: clamp(140px, 16vw, 210px) var(--gutter) clamp(72px, 9vw, 130px);
+  padding: clamp(140px, 16vw, 210px) var(--gutter-x) clamp(72px, 9vw, 130px);
 }
 .heroTitle {
   font-size: clamp(46px, 8.8vw, 148px);
@@ -63,7 +63,7 @@
 
 .latest {
   background: var(--paper);
-  padding: clamp(80px, 10vw, 150px) var(--gutter) clamp(100px, 12vw, 190px);
+  padding: clamp(80px, 10vw, 150px) var(--gutter-x) clamp(100px, 12vw, 190px);
   color: var(--ink);
 }
 .latestHead {
@@ -120,7 +120,10 @@
 }
 .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  /* Thumb then content. The source used an auto-fit track list, which handed
+     the 420px-capped thumbnail a ~560px track and let the body span only 3 of
+     5 tracks — a wide dead gap either side of the text on large screens. */
+  grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
   gap: clamp(20px, 3vw, 48px);
   align-items: center;
   background: #fff;
@@ -134,16 +137,19 @@
   background: #eef1f7;
   color: var(--ink);
 }
+@media (max-width: 720px) {
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
 .rowFrame {
   position: relative;
   aspect-ratio: 16 / 10;
   background: var(--line);
   overflow: hidden;
-  max-width: 420px;
 }
 .rowBody {
   min-width: 0;
-  grid-column: span 2;
 }
 .rowMeta {
   font-size: 14px;

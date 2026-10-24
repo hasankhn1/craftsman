@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 150px var(--gutter) clamp(48px, 8vh, 96px);
+  padding: 150px var(--gutter-x) clamp(48px, 8vh, 96px);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -50,7 +50,7 @@
 .why {
   background: #fff;
   color: var(--ink);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
 }
 .whyGrid {
   display: grid;
@@ -81,7 +81,7 @@
 
 .expect {
   background: var(--paper);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
   color: var(--ink);
 }
 .expectHead {
@@ -109,7 +109,7 @@
 .rail {
   gap: clamp(14px, 1.6vw, 22px);
   overflow-y: visible;
-  padding: 6px var(--gutter) 28px;
+  padding: 6px var(--gutter-x) 28px;
 }
 .topic {
   flex: 0 0 min(84%, max(290px, calc((100% - 48px) / 3.25)));
@@ -221,7 +221,7 @@
 
 .firsts {
   background: var(--navy);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
 }
 .firstsGrid {
   display: grid;
@@ -285,7 +285,7 @@
 .join {
   background: var(--paper);
   color: var(--ink);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
   scroll-margin-top: 60px;
 }
 .joinGrid {
@@ -367,7 +367,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(32px, 6vw, 96px) var(--gutter);
+  padding: clamp(32px, 6vw, 96px) var(--gutter-x);
   box-sizing: border-box;
 }
 .welcomeCrest {

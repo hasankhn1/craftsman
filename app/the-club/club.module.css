@@ -1,7 +1,7 @@
 .hero {
   background: #fff;
   color: var(--ink);
-  padding: clamp(140px, 16vw, 220px) var(--gutter) clamp(80px, 10vw, 150px);
+  padding: clamp(140px, 16vw, 220px) var(--gutter-x) clamp(80px, 10vw, 150px);
   overflow: hidden;
 }
 .heroGrid {
@@ -59,7 +59,7 @@
 
 .quoteSection {
   background: var(--navy);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
 }
 .quote {
   margin: 0;
@@ -82,7 +82,7 @@
 
 .mv {
   background: var(--paper);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
   color: var(--ink);
 }
 .mvRow {
@@ -122,7 +122,7 @@
 .values {
   background: #fff;
   color: var(--ink);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
 }
 .valuesTitle {
   font-size: clamp(37px, 5.28vw, 84px);
@@ -159,7 +159,7 @@
 
 .identity {
   background: var(--navy);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
 }
 .identityLabel {
   font-weight: 500;
@@ -205,7 +205,7 @@
 
 .pathway {
   background: var(--paper);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
   color: var(--ink);
 }
 .pathwayHead {
@@ -266,7 +266,7 @@
 .uae {
   background: #fff;
   color: var(--ink);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
 }
 .uaeGrid {
   display: grid;
@@ -294,7 +294,7 @@
 
 .chant {
   background: var(--navy-panel);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
   text-align: center;
 }
 .chantLabel {
@@ -325,7 +325,7 @@
 }
 .continueCard {
   text-decoration: none;
-  padding: clamp(72px, 9vw, 140px) var(--gutter);
+  padding: clamp(72px, 9vw, 140px) var(--gutter-x);
   display: flex;
   flex-direction: column;
   gap: 20px;

@@ -17,7 +17,7 @@
 
 .chapter {
   position: fixed;
-  left: var(--gutter);
+  left: var(--gutter-x);
   bottom: 24px;
   z-index: 40;
   background: var(--navy);
@@ -46,7 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 150px var(--gutter) clamp(48px, 8vh, 96px);
+  padding: 150px var(--gutter-x) clamp(48px, 8vh, 96px);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -81,7 +81,7 @@
 
 .belief {
   background: #fff;
-  padding: var(--section-y-lg) var(--gutter);
+  padding: var(--section-y-lg) var(--gutter-x);
   color: var(--ink);
 }
 .beliefInner {
@@ -114,7 +114,7 @@
 .ninety {
   background: var(--paper);
   color: var(--ink);
-  padding: var(--section-y-lg) var(--gutter);
+  padding: var(--section-y-lg) var(--gutter-x);
 }
 .ninetyHead {
   display: grid;
@@ -164,7 +164,7 @@
 
 .phoenix {
   background: var(--navy);
-  padding: var(--section-y-lg) var(--gutter);
+  padding: var(--section-y-lg) var(--gutter-x);
 }
 .phoenixGrid {
   display: grid;
@@ -217,7 +217,7 @@
 .building {
   background: #fff;
   color: var(--ink);
-  padding: var(--section-y-lg) var(--gutter);
+  padding: var(--section-y-lg) var(--gutter-x);
 }
 .buildingGrid {
   display: grid;
@@ -278,7 +278,7 @@
   min-height: 100svh;
   display: flex;
   align-items: center;
-  padding: var(--section-y-lg) var(--gutter);
+  padding: var(--section-y-lg) var(--gutter-x);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -310,7 +310,7 @@
 
 .ambition {
   background: var(--paper);
-  padding: var(--section-y-lg) var(--gutter);
+  padding: var(--section-y-lg) var(--gutter-x);
   color: var(--ink);
 }
 .ambitionTitle {
@@ -360,7 +360,7 @@
 
 .road {
   background: var(--navy);
-  padding: var(--section-y-lg) var(--gutter);
+  padding: var(--section-y-lg) var(--gutter-x);
 }
 .roadGrid {
   display: grid;
@@ -443,7 +443,7 @@
 .outro {
   background: #fff;
   color: var(--ink);
-  padding: var(--section-y-lg) var(--gutter);
+  padding: var(--section-y-lg) var(--gutter-x);
 }
 .outroTitle {
   font-size: clamp(46px, 8.8vw, 150px);

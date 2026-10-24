@@ -1,4 +1,9 @@
 .wrap {
+  /* The bar is dark on every page, so its link + focus roles stay bright
+     even when the page theme points them at the darker blue. */
+  --link: var(--blue-bright);
+  --link-hover: #ffffff;
+  --focus: var(--blue-bright);
   position: fixed;
   top: 0;
   left: 0;

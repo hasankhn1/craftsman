@@ -1,6 +1,6 @@
 .hero {
   background: #fff;
-  padding: clamp(112px, 11vw, 150px) var(--gutter) clamp(28px, 3.4vw, 48px);
+  padding: clamp(112px, 11vw, 150px) var(--gutter-x) clamp(28px, 3.4vw, 48px);
   color: var(--ink);
   display: flex;
   justify-content: center;
@@ -16,12 +16,12 @@
 
 .people {
   background: #fff;
-  padding: 0 var(--gutter) clamp(100px, 12vw, 180px);
+  padding: 0 var(--gutter-x) clamp(100px, 12vw, 180px);
   color: var(--ink);
 }
 .rail {
   gap: clamp(14px, 1.8vw, 26px);
-  padding: 8px var(--gutter) 32px;
+  padding: 8px var(--gutter-x) 32px;
 }
 .card {
   flex: 0 0 min(78%, max(256px, min(340px, calc((100% - 78px) / 4.2))));
@@ -156,7 +156,7 @@
 .squad {
   background: var(--paper);
   color: var(--ink);
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
 }
 .squadHead {
   display: grid;

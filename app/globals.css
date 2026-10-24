@@ -34,12 +34,26 @@
   /* Rhythm */
   --gutter: clamp(16px, 3.2vw, 48px);
   --gutter-wide: clamp(20px, 4vw, 48px);
+
+  /* Shared content measure. The nav pill is capped at 1480px; these keep every
+     section and the footer on the same measure instead of running full-bleed,
+     which is what made content sit outside the nav above ~1576px. Below that
+     width `max()` picks the plain gutter, so nothing changes at design size.
+     Viewport-relative (not %) so children can mirror it for negative margins. */
+  --shell-max: 1480px;
+  --gutter-x: max(var(--gutter), (100vw - var(--shell-max)) / 2);
+  --gutter-wide-x: max(var(--gutter-wide), (100vw - var(--shell-max)) / 2);
   --section-y: clamp(96px, 12vw, 190px);
   --section-y-lg: clamp(110px, 14vw, 220px);
 
   /* Motion */
   --ease-out: cubic-bezier(0.22, 0.8, 0.2, 1);
   --ease-reveal: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* Link + focus roles, re-pointed per theme below */
+  --link: var(--blue-bright);
+  --link-hover: var(--off-white);
+  --focus: var(--blue-bright);
 }
 
 *,
@@ -69,37 +83,33 @@ body {
   background: var(--navy);
   color: var(--off-white);
 }
+[data-theme='white'],
+[data-theme='paper'] {
+  color: var(--ink);
+  --link: var(--blue);
+  --link-hover: var(--ink);
+  --focus: var(--blue);
+}
 [data-theme='white'] {
   background: var(--white);
-  color: var(--ink);
 }
 [data-theme='paper'] {
   background: var(--paper);
-  color: var(--ink);
 }
 
+/* Link and focus colours travel as variables rather than as theme-prefixed
+   selectors, so any component class (specificity 0-1-0) reliably wins over
+   the bare `a` rule below instead of fighting a descendant selector. */
 a {
-  color: var(--blue-bright);
+  color: var(--link);
 }
 a:hover {
-  color: var(--off-white);
-}
-[data-theme='white'] a,
-[data-theme='paper'] a {
-  color: var(--blue);
-}
-[data-theme='white'] a:hover,
-[data-theme='paper'] a:hover {
-  color: var(--ink);
+  color: var(--link-hover);
 }
 
 :focus-visible {
-  outline: 2px solid var(--blue-bright);
+  outline: 2px solid var(--focus);
   outline-offset: 3px;
-}
-[data-theme='white'] :focus-visible,
-[data-theme='paper'] :focus-visible {
-  outline-color: var(--blue);
 }
 
 img,
@@ -169,10 +179,10 @@ fieldset {
 /* ---------------- Shared primitives ---------------- */
 
 .section {
-  padding: var(--section-y) var(--gutter);
+  padding: var(--section-y) var(--gutter-x);
 }
 .sectionLg {
-  padding: var(--section-y-lg) var(--gutter);
+  padding: var(--section-y-lg) var(--gutter-x);
 }
 
 /* Display type — the uppercase condensed headline treatment used across
@@ -373,8 +383,8 @@ fieldset {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  scroll-padding-inline: var(--gutter);
-  margin: 0 calc(-1 * var(--gutter));
+  scroll-padding-inline: var(--gutter-x);
+  margin: 0 calc(-1 * var(--gutter-x));
   scrollbar-width: none;
   -ms-overflow-style: none;
   outline-offset: -4px;
